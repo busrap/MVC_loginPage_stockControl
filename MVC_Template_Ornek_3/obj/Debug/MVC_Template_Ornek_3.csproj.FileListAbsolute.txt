@@ -1,0 +1,53 @@
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\MVC_Template_Ornek_3.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\MVC_Template_Ornek_3.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\MVC_Template_Ornek_3.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Helpers.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Mvc.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Razor.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Razor.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Razor.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Razor.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Helpers.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Mvc.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\MVC_Template_Ornek_3.dll.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\MVC_Template_Ornek_3.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\MVC_Template_Ornek_3.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Helpers.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Mvc.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Razor.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Razor.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Razor.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Webpages.Razor.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Helpers.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\bin\System.Web.Mvc.xml
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.dll
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\ASP.NET MVC\MVC_Template_Ornek_3\MVC_Template_Ornek_3\obj\Debug\MVC_Template_Ornek_3.csproj.CopyComplete

@@ -1,0 +1,150 @@
+﻿
+@{
+    ViewBag.Title = "Tedarikci Anasayfa";
+}
+
+
+@using MVC_Template_Ornek_3.Models
+
+@model List<Tedarikciler>
+<style>
+    .hata {
+        color: red;
+    }
+</style>
+
+@* Tedarikçi silme işlemi *@
+@section body{
+
+    <div class="modal fade small-modal" id="small-modal" tabindex="-1" role="dialog" aria-labelledby="small-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" data-border-top="multi">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="small-modal-label">Tedarikçi Sil</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="mesaj"></p>
+                    <p class="hata"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">İptal</button>
+                    <button type="button" class="btn btn-danger tedSil">Evet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="block" style="overflow-x:scroll">
+            <div class="block-heading">
+                <div class="main-text h2">
+                    Tedarikçiler
+
+                </div>
+                <div class="block-controls">
+
+                    <span aria-hidden="true" class="icon icon-cross icon-size-medium block-control-remove"></span>
+
+                    <a href="/Tedarikci/TedarikciEkle" class="btn btn-info">Yeni Tedarikçi Ekle</a>
+
+                </div>
+                <div class="block-content-outer ">
+                    <div class="block-content-inner">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Şirket Adı</th>
+                                    <th>Müşteri Adı</th>
+                                    <th>Müşteri Unvanı</th>
+                                    <th>Adres</th>
+                                    <th>Şehir</th>
+                                    <th>Bölge</th>
+                                    <th>Posta Kodu</th>
+                                    <th>Ülke</th>
+                                    <th>Telefon</th>
+                                    <th>Fax</th>
+
+                                    <th>Güncelle</th>
+                                    <th>Sil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Tedarikciler item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.SirketAdi</td>
+                                        <td>@item.MusteriAdi</td>
+                                        <td>@item.MusteriUnvani</td>
+                                        <td>@item.Adres</td>
+                                        <td>@item.Sehir</td>
+                                        <td>@item.Bolge</td>
+                                        <td>@item.PostaKodu</td>
+                                        <td>@item.Ulke</td>
+                                        <td>@item.Telefon</td>
+                                        <td>@item.Faks</td>
+
+                                        <td><a href="/Tedarikci/TedarikciGuncelle/@item.TedarikciID" class="btn btn-primary">Tedarikçi Güncelle</a></td>
+                                        <td>
+                                            <button class="btn btn-danger btnSil" data-toggle="modal" data-target="#small-modal" data-sirketisim="@item.SirketAdi" data-id="@item.TedarikciID">Sil</button>
+
+
+
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+@section scripts{
+    
+    <script>
+
+
+        $(".btnSil").click(function () {
+            var sirketAd = $(this).data("sirketisim");
+            $(".modal-body>p.mesaj").html("'" + sirketAd + "'" + " Tedarikçisi silinsin mi?");
+            var tedId = $(this).data("id"); //btnSil button içerisinden data-id attribute'unun değeri aldık
+            $(".tedSil").data("idi", tedId);//tedSil id'li button'a data-idi diye bir attribute ekledim dinamik(kod ile) olarak ve değerini tedId ile eşitledim
+        });
+
+
+
+        $(".tedSil").click(function () {
+            var id = $(this).data("idi");//daha sonra data-idi attribute'u nu kullanıyorum
+            $.ajax({
+                type: "POST",
+                url: "/Tedarikci/TedarikciSil/" + id,
+                success: function (durum) {
+                    if (durum == "başarılı") {
+                        window.location.replace("/Tedarikci/TedarikciIndex");
+                    }
+                    else {
+                        $(".modal-body>p.hata").html("Bağlantılı bir tedarikçi için silme yetkiniz bulunmamaktadır!");
+                    }
+                },
+
+
+            });
+        });
+
+
+    </script>
+
+  
+}

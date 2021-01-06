@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Ürün Ekle";
+}
+@using MVC_Template_Ornek_3.Models
+@* Context Class'ıma ulaşa bilmek için using'e model klasörünü eklemeliyiz *@
+<div class="row">
+    <div class="col-md-6">
+        <div class="block">
+            <div class="block-heading">
+                <div class="main-text h2">
+                    Ürün Ekleme Sayfası
+                </div>
+                <div class="block-controls">
+                    <a href="/Urun/Index">
+                        <span aria-hidden="true" class="icon icon-cross icon-size-medium block-control-remove"></span>
+                    </a>
+                    <span aria-hidden="true" class="icon icon-arrow-down icon-size-medium block-control-collapse"></span>
+                </div>
+            </div>
+            <div class="block-content-outer">
+                <div class="block-content-inner">
+                    <form action="/Urun/UrunEkle" method="post" role="form">
+                        <div class="form-group">
+                            <label>Ürün Adı</label>
+                            <input type="text" class="form-control" placeholder="Ürün adı giriniz." name="UrunAdi">
+                        </div>
+                        <div class="form-group">
+                            <label>Fiyat</label>
+                            <input type="number" class="form-control" placeholder="Fiyat giriniz." name="Fiyat">
+                        </div>
+                        <div class="form-group">
+                            <label>Stok</label>
+                            <input type="number" class="form-control" placeholder="Stok miktarı giriniz." name="Stok">
+                        </div>
+
+                        <div class="form-group">
+                            <label >Kategoriler</label>
+                            <select id="input-demo-v" class="form-control" name="KategoriID">
+
+                                @foreach (Kategoriler item in ViewBag.kate)
+                                {
+                                    <option value="@item.KategoriID">@item.KategoriAdi</option>
+                                }
+
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label >Tedarikçiler</label>
+                            <select id="input-demo-v" class="form-control" name="TedarikciID">
+
+                                @foreach (Tedarikciler item in ViewBag.teda)
+                                {
+                                    <option value="@item.TedarikciID">@item.SirketAdi</option>
+                                }
+                            </select>
+
+
+                        </div>
+                     
+                        <button type="submit" class="btn btn-primary">KAYDET</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

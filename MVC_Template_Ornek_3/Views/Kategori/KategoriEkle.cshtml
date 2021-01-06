@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Kategori Ekle";
+}
+@using MVC_Template_Ornek_3.Models
+@model List<Kategoriler>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="block">
+            <div class="block-heading">
+                <div class="main-text h2">
+                    Kategori Ekleme Sayfası
+                </div>
+                <div class="block-controls">
+                    <a href="/Kategori/KategoriIndex">
+                        <span aria-hidden="true" class="icon icon-cross icon-size-medium block-control-remove"></span>
+                    </a>
+                    <span aria-hidden="true" class="icon icon-arrow-down icon-size-medium block-control-collapse"></span>
+                </div>
+            </div>
+            <div class="block-content-outer">
+                <div class="block-content-inner">
+                    <form action="/Kategori/KategoriEkle" method="post" role="form">
+                        <div class="form-group">
+                            <label>Kategori Adı</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Kategori adı giriniz." name="KategoriAdi">
+                        </div>
+                        <div class="form-group">
+                            <label>Kategori Tanımı</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Kategori içeriği hakkında bilgi." name="Tanimi">
+                        </div>
+                      
+
+                        <button type="submit" class="btn btn-primary">KAYDET</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

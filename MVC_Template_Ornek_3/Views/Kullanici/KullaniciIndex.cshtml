@@ -1,0 +1,91 @@
+﻿
+
+@{
+    ViewBag.Title = "Üye Anasayfa";
+}
+
+@using System.Web.Security;
+
+@model MembershipUserCollection
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="block">
+            <div class="block-heading">
+                <div class="main-text h2">
+                    Üyeler
+
+                </div>
+                <div class="block-controls">
+
+                    <span aria-hidden="true" class="icon icon-cross icon-size-medium block-control-remove"></span>
+
+                    <a href="/Kullanici/KullaniciEkle" class="btn btn-info">Yeni Üye</a>
+                    <a class="btn btn-primary " href="/Kullanici/RolAta">Rol ekle</a>
+
+                </div>
+                <div class="block-content-outer">
+                    <div class="block-content-inner">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Kullanıcı Adı</th>
+                                    <th>E-mail</th>
+                                    <th>Kayıt Tarihi</th>
+                                    <th>Son Giriş Tarihi</th>
+                                    <th>Rolleri</th>
+
+                                    <th>Sil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (MembershipUser item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.UserName</td>
+                                        <td>@item.Email</td>
+                                        <td>@item.CreationDate</td>
+                                        <td>@item.LastLoginDate</td>
+                                        <td><a class="btn btn-primary rolleri" data-uyeadi="@item.UserName">Rolleri</a></td>
+
+                                        <td><a href="#" class="btn btn-danger uyesil" data-uyeadi="@item.UserName">Sil</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+@section scripts{
+   
+    <script>
+        $(".rolleri").click(function () {
+            var ka = $(this).data("uyeadi");
+
+            $.ajax
+                ({
+                type: "POST",
+                url: "/Kullanici/KullaniciUyeRolleri/",
+                data: { kullaniciAdiPrm: ka },//kullaniciAdiPrm controller'da tanımlı bir parametre
+                success: function (veri)
+                {
+                    alert(veri);
+                }
+               
+
+            });
+        });
+    </script>
+
+}
+
+

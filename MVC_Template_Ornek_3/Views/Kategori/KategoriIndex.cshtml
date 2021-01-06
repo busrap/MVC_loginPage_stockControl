@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Kategori Anasayfa";
+}
+
+
+
+
+@using MVC_Template_Ornek_3.Models
+@model List<Kategoriler>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="block">
+            <div class="block-heading">
+                <div class="main-text h2">
+                    Kategoriler
+
+                </div>
+                <div class="block-controls">
+
+                    <span aria-hidden="true" class="icon icon-cross icon-size-medium block-control-remove"></span>
+
+                    <a href="/Kategori/KategoriEkle" class="btn btn-info">Yeni Kategori Oluştur</a>
+
+                </div>
+                <div class="block-content-outer">
+                    <div class="block-content-inner">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Kategori Adı</th>
+                                    <th>Tanımı</th>
+                                    <th>Güncelle</th>
+                                    <th>Sil</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (Kategoriler item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.KategoriAdi</td>
+                                        <td>@item.Tanimi</td>
+                                        <td><a href="/Kategori/KategoriGuncelle/@item.KategoriID" class="btn btn-primary">Kategori Güncelle</a></td>
+                                        @* Silme işlemi jquery/ajax ile yapıldı aşağıda ki script incele *@
+                                        <td><a href="#" class="btn btn-danger ktgSil" data-ktgid="@item.KategoriID">Kategori Sil</a></td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+@* Ajax bir jasvascript dll'i olan jquery'nin bir metodudur o yüzden ajax'ı kullancağımız zaman jquery dll'ini sayfaya insert etmeliyiz *@
+
+@section scripts{
+
+    
+    @* Class adı çağırılırken ".ktgSil", eğer id adına göre işlem yapılacaksa "#ktgSil" şeklinde çağırım yapılır *@
+    <script>
+        $(".ktgSil").click(function () {
+            var sonuc = confirm("Kayıt Silinsin mi?")
+            if (sonuc) {
+                var ktgId = $(this).data("ktgid");
+                $.ajax({
+                    type: "post",
+                    url: "/Kategori/KategoriSil/" + ktgId,
+                    success: function () {
+                        alert("Kayıt Silindi")
+                        window.location.replace("/Kategori/KategoriIndex")
+                    },
+                    error: function () {
+                        alert("Bir hata oluştu!")
+                    }
+                });
+            }
+
+        });
+
+    </script>
+}
+
+
+
+
+
